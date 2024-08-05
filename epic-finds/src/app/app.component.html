@@ -1,0 +1,11 @@
+<app-header></app-header>
+
+<ng-container *ngIf="showCarousel">
+  <app-carousel 
+      [images]="images"
+      [autoSlide]="false" 
+      [slideInterval]="1000">
+  </app-carousel>
+</ng-container>
+
+<router-outlet></router-outlet>
